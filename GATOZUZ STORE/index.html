@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gatozuz Store - Fortnite</title>
+    <link rel="icon" type="image/png" href="img/XDE.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Filtros laterales -->
+    <div class="sidebar-wrapper">
+        <button class="filters-header">FILTROS ☰</button>
+        <div class="shop-sidebar-filters"></div>
+    </div>
+
+    <!-- Contenido principal -->
+    <div class="main-content-wrapper">
+        <header class="shop-header">
+            <h1 id="shop-title">
+                <img src="img/XDE.png" alt="Logo Gatozuz" class="shop-logo">
+                GATOZUZ STORE
+            </h1>
+        </header>
+
+        <div id="tab-regalo" class="tab-content active">
+            <p id="shop-date" style="text-align: center; color: #a0aec0; margin-bottom: 2px;">Sincronizando catálogo en vivo...</p> 
+
+            <!-- Buscador -->
+            <div class="search-container">
+                <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+                <input type="text" class="search-input" placeholder="Buscar ítem en la tienda...">
+            </div>
+
+            <!-- Contenedor de la tienda Fortnite -->
+            <div id="shop-container"></div>
+
+            <!-- Footer -->
+            <footer class="legal-footer">
+                <h2 class="footer-brand">GATOZUZ STORE</h2>
+                <p class="footer-copy">Copyright &copy; 2026 Gatozuz Store - Todos los derechos reservados.</p>
+                <p class="footer-disclaimer">
+                    Gatozuz Store no está respaldado, patrocinado, ni afiliado de ninguna manera con Epic Games, Inc.<br>
+                    Fortnite y todos los logos, diseños, imágenes y marcas relacionadas son propiedad y marcas registradas de Epic Games, Inc.
+                </p>
+            </footer>
+        </div>
+    </div>
+
+    <!-- Total flotante -->
+    <div id="floating-total-preview" class="floating-total">
+        <div class="total-label">TOTAL</div>
+        <div id="preview-soles" class="soles-highlight">PEN 0,00</div>
+    </div>
+
+    <!-- Botón flotante WhatsApp -->
+    <a id="whatsapp-btn" href="https://wa.me/51908782069" target="_blank" class="whatsapp-float">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="whatsapp-icon">
+    </a>
+
+    <!-- Modal carrito vacío -->
+    <div id="modal-carrito-vacio" class="modal-overlay">
+        <div class="modal-content">
+            <svg class="icono-advertencia" viewBox="0 0 24 24">
+                <path d="M12 2L1 21h22L12 2zm1 16h-2v-2h2v2zm0-4h-2v-5h2v5z" fill="#ffcc00"/>
+            </svg>
+            <p>Primero añade a tu carrito uno o más artículos.</p>
+            <button id="btn-cerrar-modal">Entendido</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
